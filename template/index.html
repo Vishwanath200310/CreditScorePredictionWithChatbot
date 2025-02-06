@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Financial Literacy Project</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Predicting Credit Rating Using Alternate Data Sources</h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Credit Rating Assessment</h2>
+      <form id="creditForm">
+        <div class="form-group">
+          <label for="monthly_spending">Monthly Spending:</label>
+          <input type="number" step="0.01" id="monthly_spending" name="monthly_spending" required >
+        </div>
+        <div class="form-group">
+          <label for="utility_spending">Utility Spending:</label>
+          <input type="number" step="0.01" id="utility_spending" name="utility_spending" required >
+        </div>
+        <div class="form-group">
+          <label for="ecom_transaction_volume">E-Commerce Transaction Volume:</label>
+          <input type="number" step="0.01" id="ecom_transaction_volume" name="ecom_transaction_volume" required >
+        </div>
+        <div class="form-group">
+          <label for="investment_activity">Investment Activity:</label>
+          <input type="number" step="0.01" id="investment_activity" name="investment_activity" required >
+        </div>
+        <div class="form-group">
+          <label for="social_trust_score">Social Trust Score:</label>
+          <input type="number" step="0.01" id="social_trust_score" name="social_trust_score" required >
+        </div>
+        <button type="submit">Get Credit Rating</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <section class="chatbot-section">
+      <div id="chatbot">
+        <div id="chatbot-header">Financial Literacy Chatbot</div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+          <input type="text" id="chatbot-user-input" placeholder="Ask a financial question..." >
+          <button id="chatbot-send">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Final Year Project </p>
+    <ol>
+      <li>Vishwanath L</li>
+      <li>Swetha P</li>
+      <li>Manam Navya</li>
+    </ol>
+  </footer>
+  <script src="/code.js"></script>
+</body>
+</html>
